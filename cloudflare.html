@@ -103,7 +103,7 @@
 </head>
 <body>
 	<div class='main'>
-		<h1>Generate Cloudflare Auth for VDO.Ninja</h1>
+		<h1>Generate Cloudflare Auth for TL.P2P</h1>
 		<form id="postForm">
 			<label for="userId">Cloudflare Account ID:</label>
 			<input type="text" id="userId" name="userId" autocomplete="userId" required>
@@ -117,17 +117,17 @@
 			<button type="button" id="submitButton">Generate</button>
 		</form>
 		<br><br>
-		<label for="response">Generated URL parameter to add to VDO.Ninja:</label>
-		<textarea id="response" rows="5" cols="50" readonly placeholder="Use this parameter with your VDO.Ninja links in place of &meshcast"></textarea>
+		<label for="response">Generated URL parameter to add to TL.P2P:</label>
+		<textarea id="response" rows="5" cols="50" readonly placeholder="Use this parameter with your TL.P2P links in place of &meshcast"></textarea>
 		
 		<div class="section">
 			<h2>
-				What you can do with Cloudflare + VDO.Ninja?
+				What you can do with Cloudflare + TL.P2P?
 			</h2>
 			<h3>Meshcast-alternative</h3>
 			<p>Instead of using Meshcast to broadcast video from director to guest, or guest to scene, you can use Cloudflare instead.</p>
-			<p>Meshcast, or any compatible WHIP/WHEP service, can help reduce CPU and network load of guests by offloading distribution to a server, compared to using the peer-to-peer default of VDO.Ninja
-			<p>VDO.Ninja has built-in support for Cloudflare's WHIP/WHEP, so setup and use is relatively easy.</p>
+			<p>Meshcast, or any compatible WHIP/WHEP service, can help reduce CPU and network load of guests by offloading distribution to a server, compared to using the peer-to-peer default of TL.P2P
+			<p>TL.P2P has built-in support for Cloudflare's WHIP/WHEP, so setup and use is relatively easy.</p>
 			<h3>Isolated guest recording remotely via WHEP</h3>
 			<p>You can record the streams of each guest via WHEP remotely, without transcoding and without additional load on the guests.</p>
 			<p>This offers a redundant backup for your recordings, but also makes it easier to do higher quality VODs edits after the live ends.</p>
@@ -135,20 +135,20 @@
 			<h3>Pricing</h3>
 			<p>Cloudflare has decent pricing, however it's a bit obsecure at times what the limits actually are.</p>
 			<h3>MediaMTX</h3>
-			<p>If you prefer rolling your own SFU service, VDO.Ninja supports MediaMTX. (open-source!)</p>
-			<p>Just add <b>&mediamtx=yourdomain.com</b> to your VDO.Ninja publishing URLs to have it use your own MediaMTX server.
+			<p>If you prefer rolling your own SFU service, TL.P2P supports MediaMTX. (open-source!)</p>
+			<p>Just add <b>&mediamtx=yourdomain.com</b> to your TL.P2P publishing URLs to have it use your own MediaMTX server.
 		</div>
 	</div>
 	<div class='secondary'>
 		<h2>
 			How it works?
 		</h2>
-		<p>When used with VDO.Ninja, video is published to Cloudflare via WHIP, and the WHEP playback URL is distributed to viewers. Unless otherwise specified, viewers will use the WHEP URL as the source of media from the publisher, instead of using the normal peer-to-peer mode. This has the effect of reducing the CPU and network load when sharing media with multiple videos, as instead of distributing media via peer-to-peer, the media is distributed via a server. This approach does have some downsides also, so its not normally advisable unless desired or needed.</p>
+		<p>When used with TL.P2P, video is published to Cloudflare via WHIP, and the WHEP playback URL is distributed to viewers. Unless otherwise specified, viewers will use the WHEP URL as the source of media from the publisher, instead of using the normal peer-to-peer mode. This has the effect of reducing the CPU and network load when sharing media with multiple videos, as instead of distributing media via peer-to-peer, the media is distributed via a server. This approach does have some downsides also, so its not normally advisable unless desired or needed.</p>
 		<h2>
 			Why do I need a special URL parameter?
 		</h2>
-		<p>The reason we need a special generated URL parameter is because Cloudflare requires user accounts, unlike Meshcast. While you can generate WHIP URLs within your Cloudflare dashboard, and use them on VDO.Ninja links using &whipout, you'd need to create one per guest. Instead here, we're using our Cloudflare credentials to automatically create unique WHIP ingest URLs on demand for each guest, so you can get away with one-invite link for all your guests.</p>
-		<p>Since it's not advisable to share your Cloudflare credentials, particularly with random guests, this page will encrypt your credentials into URL-friendly parameter.  Only the VDO.Ninja servers knows the decryption key, which limits what guest can do with the encrypted key. You can delete or restrict the credentials provided to VDO.Ninja from your Cloudflare dashboard, allowing you to limit or revoke any trust provided to VDO.Ninja.</p>
+		<p>The reason we need a special generated URL parameter is because Cloudflare requires user accounts, unlike Meshcast. While you can generate WHIP URLs within your Cloudflare dashboard, and use them on TL.P2P links using &whipout, you'd need to create one per guest. Instead here, we're using our Cloudflare credentials to automatically create unique WHIP ingest URLs on demand for each guest, so you can get away with one-invite link for all your guests.</p>
+		<p>Since it's not advisable to share your Cloudflare credentials, particularly with random guests, this page will encrypt your credentials into URL-friendly parameter.  Only the TL.P2P servers knows the decryption key, which limits what guest can do with the encrypted key. You can delete or restrict the credentials provided to TL.P2P from your Cloudflare dashboard, allowing you to limit or revoke any trust provided to TL.P2P.</p>
 		<h2>
 			Where to get my Cloudflare account ID and token?
 		</h2>
@@ -170,7 +170,7 @@
 		</h2>
 		<p>Yes, the code is open-sourced and it can be self-hosted, however please be aware there is limited support for those self-hosting.</p>
 		<h2>
-			Does VDO.Ninja track me or store my private information?
+			Does TL.P2P track me or store my private information?
 		</h2>
 		<p>Please refer to the <a href='https://docs.vdo.ninja/help/privacy-and-security-details'>privacy policy</a>, although the short answer is no. I can't say the same for Cloudflare, so please refer to their terms of service.
 	</div>

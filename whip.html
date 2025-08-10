@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>WHIP/WHEP Client - WebRTC Streaming Tool</title>
-    <meta name="description" content="A powerful WHIP/WHEP client for WebRTC streaming, leveraging VDO.Ninja for seamless audio and video transmission.">
-    <meta name="keywords" content="WHIP, WHEP, WebRTC, streaming, VDO.Ninja, MediaMTX">
+    <meta name="description" content="A powerful WHIP/WHEP client for WebRTC streaming, leveraging TL.P2P for seamless audio and video transmission.">
+    <meta name="keywords" content="WHIP, WHEP, WebRTC, streaming, TL.P2P, MediaMTX">
     <meta name="author" content="Your Name or Company">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://vdo.ninja/">
     <meta property="og:title" content="WHIP/WHEP Client - WebRTC Streaming Tool">
-    <meta property="og:description" content="A powerful WHIP/WHEP client for WebRTC streaming, leveraging VDO.Ninja for seamless audio and video transmission.">
+    <meta property="og:description" content="A powerful WHIP/WHEP client for WebRTC streaming, leveraging TL.P2P for seamless audio and video transmission.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://vdo.ninja/">
     <meta property="twitter:title" content="WHIP/WHEP Client - WebRTC Streaming Tool">
-    <meta property="twitter:description" content="A powerful WHIP/WHEP client for WebRTC streaming, leveraging VDO.Ninja for seamless audio and video transmission.">
+    <meta property="twitter:description" content="A powerful WHIP/WHEP client for WebRTC streaming, leveraging TL.P2P for seamless audio and video transmission.">
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon" />
@@ -583,7 +583,7 @@
 		<div class="container">
 				<div id="urlInput1" class="urlInput" title="Put the link you want to load here">
 					
-					<h3>Publish a video from VDO.Ninja to a WHIP ingestion end-point</h3>
+					<h3>Publish a video from TL.P2P to a WHIP ingestion end-point</h3>
 					
 					<div  class="inputCombo" id="inputCombo1">
 						<label for="changeText">
@@ -664,7 +664,7 @@
 					</div>	
 				</div>
 				<div id="urlInput2" class="urlInput">
-					<h3>Setup VDO.Ninja to be a WHIP-ingestion end-point (OBS → VDO)</h3>
+					<h3>Setup TL.P2P to be a WHIP-ingestion end-point (OBS → VDO)</h3>
 					
 					<div class="input-section">
 						<div class="inputCombo" id="inputCombo2">
@@ -693,7 +693,7 @@
 								</div>
 								<div class="note">
 									<i class="las la-play-circle"></i>
-									<span>You have to first start VDO.Ninja (GO button) before starting your OBS stream.</span>
+									<span>You have to first start TL.P2P (GO button) before starting your OBS stream.</span>
 								</div>
 								<div class="note">
 									<i class="las la-users"></i>
@@ -739,7 +739,7 @@
 					</div>
 				</div>
 				<div id="urlInput1a" class="urlInput">
-					<h3>Publish your camera or screen directly to Twitch channel using VDO.Ninja</h3>
+					<h3>Publish your camera or screen directly to Twitch channel using TL.P2P</h3>
 					
 					<div class="input-section">
 						<div class="inputCombo" id="inputCombo1t">
@@ -772,7 +772,7 @@
 									<i class="las la-video"></i>
 									<div class="tool-info">
 										<h5>IP Camera Publisher</h5>
-										<p>Stream MJPEG IP camera feeds with VDO.Ninja to Twitch or other platforms</p>
+										<p>Stream MJPEG IP camera feeds with TL.P2P to Twitch or other platforms</p>
 										<a href="https://vdo.ninja/alpha/ipcam" target="_blank">Try IP Camera →</a>
 									</div>
 								</div>
@@ -781,7 +781,7 @@
 									<i class="las la-th-large"></i>
 									<div class="tool-info">
 										<h5>Multi-Guest Mixer</h5>
-										<p>Mix multiple VDO.Ninja guests into a single stream, all in your browser</p>
+										<p>Mix multiple TL.P2P guests into a single stream, all in your browser</p>
 										<a href="https://vdo.ninja/mixer" target="_blank">Try Mixer →</a>
 									</div>
 								</div>
@@ -831,9 +831,9 @@
 						</select>
 					</div>
 				</div>
-				<div id="urlInput4" class="urlInput" title="Start a VDO.Ninja stream, and then after, access it remotely via WHEP">
+				<div id="urlInput4" class="urlInput" title="Start a TL.P2P stream, and then after, access it remotely via WHEP">
 					
-					<h3>Host a VDO.Ninja stream as a WHEP source</h3>
+					<h3>Host a TL.P2P stream as a WHEP source</h3>
 					
 					<div  class="inputCombo" id="inputCombo4">
 						<label for="changeText">
@@ -870,20 +870,20 @@
 
 					<div id="additional-info">
 						<h2>About WHIP/WHEP Integration Options</h2>
-						<p>There are three main ways to publish using WHIP from VDO.Ninja:</p>
+						<p>There are three main ways to publish using WHIP from TL.P2P:</p>
 						<ul>
-							<li><strong>MediaMTX self-hosted server:</strong> Add <code>&mediamtx=yourserver.com</code> to any VDO.Ninja URL</li>
-							<li><strong>Meshcast managed service:</strong> Add <code>&meshcast</code> to any VDO.Ninja URL</li>
+							<li><strong>MediaMTX self-hosted server:</strong> Add <code>&mediamtx=yourserver.com</code> to any TL.P2P URL</li>
+							<li><strong>Meshcast managed service:</strong> Add <code>&meshcast</code> to any TL.P2P URL</li>
 							<li><strong>Other WHIP/WHEP services:</strong> Using <code>&whipout</code>, which is what this page tends to use</li>
 						</ul>
-						<p>You can of course also playback videos into VDO.Ninja from WHIP/WHEP clients and servers.</p>
+						<p>You can of course also playback videos into TL.P2P from WHIP/WHEP clients and servers.</p>
 
 						<h3>Using MediaMTX</h3>
 						<p>MediaMTX is a self-hosted SFU that supports WHIP/WHEP:</p>
 						<ul>
-							<li>Works with VDO.Ninja group rooms and other features, just like Meshcast</li>
+							<li>Works with TL.P2P group rooms and other features, just like Meshcast</li>
 							<li>Custom port can be set, making port forwarding on a router easy</li>
-							<li>Ultilizing it with VDO.Ninja is as easy as using Meshcast: <code>&mediamtx=yourserver.com:port</code></li>
+							<li>Ultilizing it with TL.P2P is as easy as using Meshcast: <code>&mediamtx=yourserver.com:port</code></li>
 							<li>Find setup instructions in our <a href="https://docs.vdo.ninja/guides/deploy-your-own-meshcast-like-service" target="_blank">MediaMTX guide</a></li>
 						</ul>
 
@@ -891,7 +891,7 @@
 						<p>Meshcast.io offers a managed WHIP/WHEP service:</p>
 						<ul>
 							<li>Free service with servers in US, Canada, and Europe</li>
-							<li>Just add <code>&meshcast</code> to any VDO.Ninja URL</li>
+							<li>Just add <code>&meshcast</code> to any TL.P2P URL</li>
 							<li>No setup required - auto-connects to nearest server</li>
 							<li>Supports up to 100 viewers</li>
 							<li>Perfect for quick setups and small broadcasts</li>
@@ -902,25 +902,25 @@
 						<p>This page provides a simple client for direct WHIP/WHEP streaming:</p>
 						<ul>
 							<li>Easily tweak and change advanced WebRTC streaming settings</li>
-							<li>Publish from the VDO.Ninja mixer or whiteboard directly to Twitch or WHIP service</li>
+							<li>Publish from the TL.P2P mixer or whiteboard directly to Twitch or WHIP service</li>
 							<li>Peer-to-Peer WHIP playback allows for server-free OBS to OBS streaming</li>
-							<li>Host VDO.Ninja streams as WHEP sources or view WHEP sources</li>
+							<li>Host TL.P2P streams as WHEP sources or view WHEP sources</li>
 						</ul>
 
 						<h3>Troubleshooting</h3>
 						<p>Common solutions for connection issues:</p>
 						<ul>
 							<li>Verify network and firewall settings</li>
-							<li>If publishing with OBS to VDO.Ninja, ensure a compatible OBS version is used.</li>
+							<li>If publishing with OBS to TL.P2P, ensure a compatible OBS version is used.</li>
 							<li>Check MediaMTX server accessibility and SSL requirements</li>
 							<li>For H265 support, check <a href="https://vdo.ninja/h265" target="_blank">browser compatibility</a></li>
-							<li>WHIP is one to one, so publishing from OBS to VDO.Ninja directly, without an SFU, will only allow one viewer at a time</li>
+							<li>WHIP is one to one, so publishing from OBS to TL.P2P directly, without an SFU, will only allow one viewer at a time</li>
 						</ul>
 					</div>
 
 					<div id="about-vdo-ninja">
-						<h2>About VDO.Ninja</h2>
-						<p>VDO.Ninja is a free, open-source platform for live video production that supports multiple ways to integrate WHIP/WHEP streaming:</p>
+						<h2>About TL.P2P</h2>
+						<p>TL.P2P is a free, open-source platform for live video production that supports multiple ways to integrate WHIP/WHEP streaming:</p>
 						<ul>
 							<li>It's easy to switch from peer to peer to server-based broadcasting with MediaMTX and Meshcast</li>
 							<li>Direct WHIP/WHEP publishing capabilities lowers latency and costs</li>
@@ -929,9 +929,9 @@
 						</ul>
 						
 						<h3>Open Source</h3>
-						<p>Both VDO.Ninja and this WHIP/WHEP client are open-source:</p>
+						<p>Both TL.P2P and this WHIP/WHEP client are open-source:</p>
 						<ul>
-							<li>VDO.Ninja: <a href="https://github.com/steveseguin/vdoninja" target="_blank">https://github.com/steveseguin/vdoninja</a></li>
+							<li>TL.P2P: <a href="https://github.com/steveseguin/vdoninja" target="_blank">https://github.com/steveseguin/vdoninja</a></li>
 							<li>WHIP/WHEP Client: <a href="https://github.com/steveseguin/vdo.ninja/blob/develop/whip.html" target="_blank">https://github.com/steveseguin/vdo.ninja/blob/develop/whip.html</a></li>
 						</ul>
 					</div>
